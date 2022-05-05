@@ -1,19 +1,22 @@
 import './App.css';
-import Bars1 from './Bars/1';
-import Bars2 from './Bars/2';
-import Bars3 from './Bars/3';
-import Bars4 from './Bars/4';
-import Bars5 from './Bars/5';
+/* import Steps1 from './Steps/1';
+import Steps2 from './Steps/2';
+import Steps3 from './Steps/3';
+import Steps4 from './Steps/4';
+import Steps5 from './Steps/5'; */
+
+import Graph from './Components/Graph';
 
 function App() {
   return (
     <main className="main">
       <div>Visx med Jacob!</div>
-      <Bars1 />
-      <Bars2 />
-      <Bars3 />
-      <Bars4 />
-      <Bars5 />
+      <Graph />
+      {/* <Steps1 />
+      <Steps2 />
+      <Steps3 />
+      <Steps4 />
+      <Steps5 /> */}
     </main>
   );
 }

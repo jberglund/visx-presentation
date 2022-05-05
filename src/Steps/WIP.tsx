@@ -8,38 +8,15 @@ Recap så långt! Vi har lärt oss:
 
 */
 
-// paths
-
-import { scaleLinear, scaleTime } from '@visx/scale';
+import { scaleTime } from '@visx/scale';
 
 import { getMinMax } from '../helpers';
 import { width, height, employees, Employee } from '../config';
 
-const getValue = (i: Employee) => i.name;
+
 const getDate = (i: Employee) => i.date.getTime();
 
-const paddingTop = 10;
-
 const [minX, maxX] = getMinMax(employees.map(getDate));
-//const [minY, maxY] = getMinMax(data.map(getValue));
-
-type ByYear = {
-  ['year']: {
-    ['month']: [Employee]
-  }
-}
-console.log(employees.reduce((acc, curr) => {
-  const year = curr.date.getFullYear();
-  const month = curr.date.getMonth();
-
-  const lol = acc[year][month];
-  return {
-    ...acc,
-    [year]: {
-      [month]: [curr]
-    }
-  }
-}, {}));
 
 export default function Bars() {
   const xScale = scaleTime({
@@ -61,9 +38,3 @@ export default function Bars() {
     </svg>
   );
 }
-
-/* cheat codes
-
-
-  NBNBNB! Vi ser bara markern utanför nu för att vi har overflow: visible på.
-*/

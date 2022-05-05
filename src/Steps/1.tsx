@@ -1,11 +1,5 @@
 import { height, width } from '../config';
 
-/* 
-  Todo:
-    - rect
-    - const bars = [50, 70, 89, 56];
-*/
-
 export default function Bars() {
   return (
     <svg height={height} width={width} xmlns="http://www.w3.org/2000/svg">

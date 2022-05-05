@@ -1,0 +1,36 @@
+.main {
+  padding: 5rem;
+  display: grid;
+  gap: 3rem;
+}
+
+svg {
+  overflow: visible;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+}
+
+svg rect {
+  stroke: var(--color-red);
+  stroke-width: 1px;
+  /* fill: var(--color-teal); */
+  fill-opacity: 0.2;
+  fill: linear-gradient(
+    180.11deg,
+    #fe643f -18.19%,
+    rgba(45, 40, 39, 0.12) 99.91%
+  );
+}
+
+svg path {
+  stroke: var(--color-teal);
+}
+
+svg circle {
+  --marker-color: var(--color-teal);
+  fill: var(--marker-color);
+  fill-opacity: 0.2;
+  stroke: var(--marker-color);
+  stroke-width: 2px;
+  stroke-opacity: 0.8;
+}
